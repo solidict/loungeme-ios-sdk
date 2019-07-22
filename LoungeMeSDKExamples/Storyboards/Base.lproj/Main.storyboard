@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="LoungeMeSDKExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U5x-dl-o5N">
+                                <rect key="frame" x="20" y="297.33333333333331" width="374" height="141.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow Pointer Icon" translatesAutoresizingMaskIntoConstraints="NO" id="ezY-hE-cCe">
+                                        <rect key="frame" x="174" y="0.0" width="26" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="4Bd-k0-JG9"/>
+                                            <constraint firstAttribute="width" constant="26" id="aEA-Vz-GjP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vq-iB-Ihf" userLabel="LoungeMe Button">
+                                        <rect key="frame" x="139" y="32" width="96" height="96"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="96" id="7pN-63-saO"/>
+                                            <constraint firstAttribute="height" constant="96" id="mai-C3-r5D"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="LoungeMe Icon"/>
+                                        <connections>
+                                            <action selector="loungeMeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="COS-dz-6C4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please click on LoungeMe icon above to see how SDK works." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSd-mS-IAA" userLabel="Description Label">
+                                        <rect key="frame" x="27.666666666666657" y="127.99999999999999" width="319" height="13.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.3832440972328186" green="0.3522760272026062" blue="0.62355488538742065" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U5x-dl-o5N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="28F-3F-gpw"/>
+                            <constraint firstItem="U5x-dl-o5N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="La7-Bx-tcf"/>
+                            <constraint firstAttribute="trailing" secondItem="U5x-dl-o5N" secondAttribute="trailing" constant="20" id="b6M-Pn-6En"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="CSd-mS-IAA" id="axH-EY-1qS"/>
+                        <outlet property="loungeMeButton" destination="0vq-iB-Ihf" id="r6l-Z4-c47"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Arrow Pointer Icon" width="585" height="751"/>
+        <image name="LoungeMe Icon" width="198" height="198"/>
+    </resources>
+</document>

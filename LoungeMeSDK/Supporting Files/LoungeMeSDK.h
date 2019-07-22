@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double LoungeMeSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char LoungeMeSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <LoungeMeSDK/PublicHeader.h>
-
-
