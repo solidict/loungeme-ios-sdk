@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = "LoungeMeSDK"
-    spec.version      = "1.0.0"
+    spec.version      = "1.0.1"
     spec.summary      = "LoungeMeSDK iOS SDK"
 
     spec.description  = <<-DESC

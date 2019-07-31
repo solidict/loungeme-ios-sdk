@@ -9,6 +9,8 @@
 import Foundation
 
 internal final class LocalizedStringManager {
+    // MARK: - Static Fields
+    
     private static let AVAILABLE_LANGUAGE_CODES = ["tr", "en"]
     private static let FALLBACK_LANGUAGE_CODE = "en"
     
@@ -24,6 +26,8 @@ internal final class LocalizedStringManager {
             "secureHomeUrl": "https://lounge.me/en/secure-home"
         ]
     ]
+    
+    // MARK: - Public Static Methods
     
     public static func getValue(forKey key: String) -> String {
         guard var preferredLocalization = Locale.preferredLanguages[0].components(separatedBy: "-").first else {

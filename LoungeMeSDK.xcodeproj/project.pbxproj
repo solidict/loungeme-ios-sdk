@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C30C46FE22E58EF900C4F8BE /* LocalizedStringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30C46FD22E58EF900C4F8BE /* LocalizedStringManager.swift */; };
-		C30C470722E59EE200C4F8BE /* loungeme.png in Resources */ = {isa = PBXBuildFile; fileRef = C30C470222E59EE100C4F8BE /* loungeme.png */; };
 		C30C470822E59EE200C4F8BE /* LoungeMeSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C30C470322E59EE100C4F8BE /* LoungeMeSDK.podspec */; };
 		C30C470922E59EE200C4F8BE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C30C470422E59EE200C4F8BE /* LICENSE */; };
 		C30C470A22E59EE200C4F8BE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C30C470522E59EE200C4F8BE /* README.md */; };
@@ -27,6 +26,7 @@
 		C33126EA22E344FD00B7F4BE /* WebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33126E222E3402C00B7F4BE /* WebViewViewController.xib */; };
 		C33126ED22E34EBA00B7F4BE /* LoungeMeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C33126B622E33E0F00B7F4BE /* LoungeMeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C33126F122E34EDA00B7F4BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33126E822E3439100B7F4BE /* Assets.xcassets */; };
+		C393C5CB22F1B70300C93797 /* LoungeMe.png in Resources */ = {isa = PBXBuildFile; fileRef = C393C5CA22F1B70300C93797 /* LoungeMe.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,6 @@
 
 /* Begin PBXFileReference section */
 		C30C46FD22E58EF900C4F8BE /* LocalizedStringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringManager.swift; sourceTree = "<group>"; };
-		C30C470222E59EE100C4F8BE /* loungeme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loungeme.png; sourceTree = "<group>"; };
 		C30C470322E59EE100C4F8BE /* LoungeMeSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LoungeMeSDK.podspec; sourceTree = "<group>"; };
 		C30C470422E59EE200C4F8BE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C30C470522E59EE200C4F8BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		C33126E222E3402C00B7F4BE /* WebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewViewController.xib; sourceTree = "<group>"; };
 		C33126E622E340AF00B7F4BE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C33126E822E3439100B7F4BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C393C5CA22F1B70300C93797 /* LoungeMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoungeMe.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,10 @@
 		C30C46FF22E59EB200C4F8BE /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				C30C470522E59EE200C4F8BE /* README.md */,
 				C30C470622E59EE200C4F8BE /* CONTRIBUTING.md */,
 				C30C470422E59EE200C4F8BE /* LICENSE */,
-				C30C470522E59EE200C4F8BE /* README.md */,
-				C30C470222E59EE100C4F8BE /* loungeme.png */,
+				C393C5CA22F1B70300C93797 /* LoungeMe.png */,
 				C30C470322E59EE100C4F8BE /* LoungeMeSDK.podspec */,
 			);
 			name = Repository;
@@ -318,8 +318,8 @@
 				C30C470822E59EE200C4F8BE /* LoungeMeSDK.podspec in Resources */,
 				C33126E422E3402C00B7F4BE /* WebViewViewController.xib in Resources */,
 				C30C470B22E59EE200C4F8BE /* CONTRIBUTING.md in Resources */,
-				C30C470722E59EE200C4F8BE /* loungeme.png in Resources */,
 				C30C470922E59EE200C4F8BE /* LICENSE in Resources */,
+				C393C5CB22F1B70300C93797 /* LoungeMe.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

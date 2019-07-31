@@ -20,8 +20,9 @@ internal final class WebViewViewController: UIViewController {
     
     // MARK: - Fields
     
+    internal var applicationId: String!
     internal var shouldDismissAnimate: Bool!
-    internal var dismissCompletion: (() -> Void)? = nil
+    internal var dismissCompletion: (() -> Void)?
     internal var observers: [NSKeyValueObservation] = []
     
     // MARK: - View Controller Lifecycle
@@ -31,6 +32,7 @@ internal final class WebViewViewController: UIViewController {
         
         // Do assertions
         assert(self.shouldDismissAnimate != nil, "shouldDismissAnimate must not be null")
+        assert(self.applicationId != nil, "applicationId must not be null")
         
         // MARK: Configure outlets
         
@@ -110,7 +112,10 @@ internal final class WebViewViewController: UIViewController {
             fatalError("failed to get secureHomeUrl from LocalizedStringManager")
         }
         
-        let urlRequest = URLRequest(url: url)
+        var urlRequest = URLRequest(url: url)
+        
+        // Put application id token
+        urlRequest.setValue(self.applicationId, forHTTPHeaderField: "X-Application-Id")
         
         self.webView.load(urlRequest)
     }

@@ -13,6 +13,7 @@ public final class LoungeMe {
     
     public static func show(
         onViewController viewController: UIViewController,
+        applicationId: String,
         animated: Bool = true,
         pushCompletion: (() -> Void)? = nil,
         dismissCompletion: (() -> Void)? = nil
@@ -22,6 +23,7 @@ public final class LoungeMe {
             bundle: Bundle(for: LoungeMe.self)
         )
 
+        webViewViewController.applicationId = applicationId
         webViewViewController.shouldDismissAnimate = animated
         webViewViewController.dismissCompletion = dismissCompletion
         

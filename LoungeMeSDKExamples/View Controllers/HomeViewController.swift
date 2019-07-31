@@ -29,7 +29,7 @@ internal final class HomeViewController: UIViewController {
         self.loungeMeButton.isEnabled = false
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            LoungeMe.show(onViewController: self, animated: true, pushCompletion: nil) {
+            LoungeMe.show(onViewController: self, applicationId: "YOUR_APPLICATION_ID", animated: true, pushCompletion: nil) {
                 self.descriptionLabel.text = "Great, r-right?"
                 self.loungeMeButton.isEnabled = true
             }

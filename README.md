@@ -1,4 +1,4 @@
-![LoungeMe Logo](https://raw.githubusercontent.com/solidict/loungeme-ios-sdk/master/loungeme.png)
+![LoungeMe Logo](https://raw.githubusercontent.com/solidict/loungeme-ios-sdk/master/LoungeMe.png)
 
 # LoungeMe iOS SDK
 
@@ -40,8 +40,10 @@ After integrating SDK into your project navigate to the source code of *View Con
 - To present `LoungeMe`'s web page on top of current *View Controller* you must execute code lines below.
 
 ```swift
-LoungeMe.show(onViewController: self)
+LoungeMe.show(onViewController: self, applicationId: "YOUR_APPLICATION_ID")
 ```
+
+⚠️ Don't forget to replace `applicationId` value with your application id.
 
 - You're good to go. Just launch your application and see how it works.
 
